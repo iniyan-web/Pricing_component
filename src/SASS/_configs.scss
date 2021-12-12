@@ -1,0 +1,17 @@
+$gradient-start: hsl(236, 72%, 79%);
+$gradient-end: hsl(237, 63%, 64%);
+$very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+$light-Grayish-Blue: hsl(234, 14%, 74%);
+$grayish-Blue: hsl(233, 13%, 49%);
+$dark-Grayish-Blue: hsl(232, 13%, 33%);
+$primary-card-border: hsl(240, 78%, 90%);
+$secondary-card-border: hsl(236, 72%, 78%);
+
+@mixin font-stack {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+@mixin body-copy {
+  font-size: 15px;
+}

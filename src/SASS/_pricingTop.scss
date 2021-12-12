@@ -1,0 +1,72 @@
+.pricing-top {
+  height: 26%;
+
+  .main-title {
+    font-size: 2rem;
+    color: $grayish-Blue;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .plan-switch {
+    width: 15rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .plan {
+      font-size: 1rem;
+      color: $light-Grayish-Blue;
+    }
+
+    .toggle-btn {
+      height: 1.8rem;
+      width: 3.5rem;
+      position: relative;
+      cursor: pointer;
+
+      .slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+          to right,
+          $gradient-start,
+          $gradient-end
+        );
+        border-radius: 1rem;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          z-index: 1;
+          top: 3px;
+          right: 3px;
+          width: 21px;
+          height: 21px;
+          background-color: #fff;
+          border-radius: 100%;
+          transition: all 0.5s ease-in-out;
+        }
+
+        &:hover {
+          background: $light-Grayish-Blue;
+        }
+      }
+
+      .checkbox {
+        height: 0;
+        width: 0;
+        opacity: 0;
+
+        &:checked + .slider::before {
+          transform: translateX(-25px);
+        }
+      }
+    }
+  }
+}

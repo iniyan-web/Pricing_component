@@ -1,0 +1,178 @@
+@media screen and (max-width: 1024px) {
+  main {
+    width: 60rem;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  main {
+    width: 50rem;
+    height: 35rem;
+  }
+
+  .pricing-top {
+    .main-title {
+      font-size: 1.8rem;
+    }
+
+    .plan-switch {
+      width: 14rem;
+
+      .plan {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .pricing-cards {
+    .card {
+      padding: 1.5rem;
+
+      .title {
+        font-size: 0.9rem;
+      }
+
+      .price {
+        font-size: 3.5rem;
+      }
+
+      .storage,
+      .max-users,
+      .data-limit {
+        font-size: 0.8rem;
+      }
+
+      .card-btn {
+        margin-top: 2em;
+        font-size: 0.8rem;
+      }
+    }
+
+    .Professional {
+      padding: 2.8rem 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: url("../images/bg-top.svg") top right no-repeat,
+      url("../images/bg-bottom.svg") bottom left no-repeat,
+      $very-Light-Grayish-Blue;
+    background-size: 200px 500px, 200px 200px;
+  }
+
+  main {
+    width: 44rem;
+    height: 30rem;
+  }
+
+  .pricing-top {
+    height: 25%;
+
+    .main-title {
+      font-size: 1.6rem;
+    }
+
+    .plan-switch {
+      width: 13rem;
+
+      .plan {
+        font-size: 0.85rem;
+      }
+    }
+  }
+
+  .pricing-cards {
+    height: 75%;
+
+    .card {
+      padding: 1rem;
+
+      .title {
+        font-size: 0.85rem;
+      }
+
+      .price {
+        font-size: 3rem;
+
+        span {
+          font-size: 1.5rem;
+        }
+      }
+
+      .storage,
+      .max-users,
+      .data-limit {
+        font-size: 0.7rem;
+      }
+
+      .card-btn {
+        margin-top: 2em;
+        font-size: 0.7rem;
+      }
+    }
+
+    .Professional {
+      padding: 2.1rem 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  main {
+    width: 19rem;
+    height: 75rem;
+  }
+
+  .pricing-top {
+    height: 12%;
+
+    .plan-switch {
+      width: 14rem;
+    }
+  }
+
+  .pricing-cards {
+    height: 88%;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+
+    .card {
+      width: 100%;
+      padding: 1.5rem;
+
+      .title {
+        font-size: 1rem;
+      }
+
+      .price {
+        font-size: 3rem;
+
+        span {
+          font-size: 1.5rem;
+          left: -0.2rem;
+        }
+      }
+    }
+
+    .Professional {
+      padding: 1.5rem;
+      box-shadow: 5px 15px 25px 0 $primary-card-border;
+    }
+  }
+}
+
+@media screen and (max-width: 475px) {
+  body {
+    background: url("../images/bg-top.svg") top right -20% no-repeat $very-Light-Grayish-Blue;
+    background-size: 200px 400px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    background: url("../images/bg-top.svg") top right -85% no-repeat $very-Light-Grayish-Blue;
+    background-size: 200px 400px;
+  }
+}

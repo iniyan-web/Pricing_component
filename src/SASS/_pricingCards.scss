@@ -1,0 +1,102 @@
+.pricing-cards {
+  height: 74%;
+  display: flex;
+  align-items: center;
+
+  .card {
+    text-align: center;
+    flex-basis: 100%;
+    height: 90%;
+    padding: 1.5rem 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 5px 15px 25px 0 $primary-card-border;
+
+    .title {
+      font-size: 1.2rem;
+      color: $grayish-Blue;
+    }
+
+    .price {
+      color: $dark-Grayish-Blue;
+      font-size: 3.8rem;
+      padding: 0.2em 0;
+      border-bottom: 1px solid $primary-card-border;
+
+      span {
+        font-size: 2rem;
+        position: relative;
+        top: -0.5rem;
+        left: -0.4rem;
+      }
+    }
+
+    .storage,
+    .max-users,
+    .data-limit {
+      font-size: 0.9rem;
+      color: $grayish-Blue;
+      padding: 1.15em 0;
+      border-bottom: 1px solid $primary-card-border;
+    }
+
+    .card-btn {
+      width: 100%;
+      height: 2.6rem;
+      padding: auto;
+      margin-top: 1.6em;
+      @include font-stack;
+      font-size: 1rem;
+      color: #fff;
+      text-transform: uppercase;
+      background-image: linear-gradient(
+        to right,
+        $gradient-start,
+        $gradient-end
+      );
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background: transparent;
+        border: 1px solid $gradient-end;
+        color: $gradient-end;
+      }
+    }
+  }
+
+  .Professional {
+    height: 100%;
+    padding: 2.85rem 2rem;
+    background-image: linear-gradient(
+      to bottom,
+      $gradient-start,
+      $gradient-end
+    );
+    box-shadow: none;
+
+    .title,
+    .price,
+    .storage,
+    .max-users,
+    .data-limit {
+      color: #fff;
+      border-bottom: 1px solid $secondary-card-border;
+    }
+
+    .title {
+      border: none;
+    }
+
+    .card-btn {
+      color: $gradient-end;
+      background: #fff;
+
+      &:hover {
+        color: #fff;
+        border: 1px solid #fff;
+      }
+    }
+  }
+}

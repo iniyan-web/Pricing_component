@@ -1,0 +1,27 @@
+@import "./resets";
+@import "./configs";
+
+html {
+  @include body-copy;
+}
+
+body {
+  @include font-stack;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: url("../images/bg-top.svg") top right no-repeat,
+    url("../images/bg-bottom.svg") bottom left no-repeat,
+    $very-Light-Grayish-Blue;
+  background-size: 375px 530px, 300px 225px;
+}
+
+main {
+  width: 65rem;
+  height: 37rem;
+  margin: 1.5rem auto;
+}
+
+@import "./pricingTop";
+@import "./pricingCards";
+@import "./mediaQuery";
